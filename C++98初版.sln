@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{94DC57EE-DA8F-4B98-9C35-E9D55E61B3C1}"
+	ProjectSection(SolutionItems) = preProject
+		10、运算符重载.cpp = 10、运算符重载.cpp
+		11、运算符重载1.cpp = 11、运算符重载1.cpp
+		12、重载左移运算符.cpp = 12、重载左移运算符.cpp
+		13、多继承.cpp = 13、多继承.cpp
+		14、虚继承.cpp = 14、虚继承.cpp
+		15、虚继承1.cpp = 15、虚继承1.cpp
+		16、错误的处理和调试.cpp = 16、错误的处理和调试.cpp
+		17、assert.cpp = 17、assert.cpp
+		18、动态数组.cpp = 18、动态数组.cpp
+		19、从函数方法返回内存.cpp = 19、从函数方法返回内存.cpp
+		1、this指针，和类的继承.cpp = 1、this指针，和类的继承.cpp
+		20、捕获异常.cpp = 20、捕获异常.cpp
+		21、副本构造器.cpp = 21、副本构造器.cpp
+		22、副本构造器2.cpp = 22、副本构造器2.cpp
+		23、强制类型转换.cpp = 23、强制类型转换.cpp
+		24、链接和作用域.cpp = 24、链接和作用域.cpp
+		25、swap.cpp = 25、swap.cpp
+		26、类模板.cpp = 26、类模板.cpp
+		27.内联模板.cpp = 27.内联模板.cpp
+		28.容器和算法.cpp = 28.容器和算法.cpp
+		2、this指针，类的继承.cpp = 2、this指针，类的继承.cpp
+		3、继承机制中的构造器和析构器.cpp = 3、继承机制中的构造器和析构器.cpp
+		4、访问控制.cpp = 4、访问控制.cpp
+		5、覆盖方法和重载方法.cpp = 5、覆盖方法和重载方法.cpp
+		6、静态属性和静态方法.cpp = 6、静态属性和静态方法.cpp
+		7、虚方法.cpp = 7、虚方法.cpp
+		8、抽象方法.cpp = 8、抽象方法.cpp
+		9、抽象方法1.cpp = 9、抽象方法1.cpp
+		afd.cpp = afd.cpp
+		c++1.cpp = c++1.cpp
+		fstream.cpp = fstream.cpp
+		ofstream.cpp = ofstream.cpp
+		ofstream1.cpp = ofstream1.cpp
+		ofstream2.cpp = ofstream2.cpp
+		ooooo.cpp = ooooo.cpp
+		test.cpp = test.cpp
+		抽象方法1.cpp = 抽象方法1.cpp
+		数组.cpp = 数组.cpp
+		访问控制.cpp = 访问控制.cpp
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFC61DD1-46CE-4AA6-8247-A5AFF0FCEFB9}
+	EndGlobalSection
+EndGlobal
