@@ -59,3 +59,9 @@ int main()
     }
     return 0;
 }
+
+/* //执行结果，输入10
+plice in put score
+10
+10is3628800
+*/

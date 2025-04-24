@@ -1,3 +1,4 @@
+//🤓 🤓🤓🤓🤓🤓🤓🤓   😏  😎
 #include <iostream>
 #include <string>
 #include <stdlib.h>
@@ -128,7 +129,11 @@ int main()
     Rational f2(7, 8);
 
     // 测试有理数加法运算
-    Rational res = f1 + f2;//f2是参数，f1是对象本身，可以用this指针
+    Rational res = f1 + f2;
+    //f2是参数，f1是对象本身，可以用this指针 ，背后调用f1.operator+(f2);
+    //Rational Rational::operator+(Rational rhs)
+    //加号左边是对象本身，加号右边是参数
+    
     f1.print();
     std::cout << " + ";
     f2.print();
@@ -165,3 +170,9 @@ int main()
 
     return 0;
 }
+/*运行结果
+1/8 + 7/8 = 1
+1/8 - 7/8 = -3/4
+1/8 * 7/8 = 7/64
+1/8 / 7/8 = 1/7
+*/

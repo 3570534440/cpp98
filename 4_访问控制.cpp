@@ -46,7 +46,7 @@ void Animal:: drool()
     std::cout<<"eeeee"<<std::endl;
 }
 
-Pig::Pig(std::string thename):Animal(thename)
+Pig::Pig(std::string thename):Animal(thename)  
 //初始化，使pig.name继承到animal中的thename
 //便于给pig.name赋值
 {
@@ -57,7 +57,7 @@ void Pig::climb()
     std::cout<<"fffff"<<std::endl;
 }
 
-Turtle::Turtle(std::string thename):Animal(thename)
+Turtle::Turtle(std::string thename):Animal(thename)  //构造函数初始化列表，表示调用基类 Animal 的构造函数并传入 thename 完成类成员的初始化
 {
 }
 void Turtle::swim()
@@ -67,10 +67,11 @@ void Turtle::swim()
 int main()
 {
     Pig pig("hhhh");//初始化，子类可以访问基类，可以这样赋值
+    std::cout<<pig.name<<std::endl;
     Turtle turtle("iiii");//初始化，两个子类的值可以分开，可以不同
     pig.name="jjjjj";//赋值
     std::cout<<pig.name<<std::endl;
-    std::cout<<turtle.name<<std::endl;
+    std::cout<<turtle.name<<std::endl; //是父类的成员，子类可以打印出不同的name
 
     pig.eat();
     turtle.eat();
@@ -78,3 +79,14 @@ int main()
     turtle.swim();
     return 0;
 }
+
+/*打印结果 ：继承父类的成员变量，每个子类都有自己独一份的成员变量。
+hhhh
+jjjjj
+iiii
+aaaaa
+aaaaa
+fffff
+ggggg
+*/
+

@@ -15,12 +15,15 @@ protected:
     std::string name;
     //pet类可以访问name
 private:
-    static int count;
-    //pet类可以访问count
-    //静态成员属性，在类外面初始化
+    static int count; 
+    //属于整个类而不是属于某一个对象
+    //pet类可以访问count   
+    //静态成员属性，在类外面初始化  
+    //在类内 static int count = 0; // 错的！类内不能给 static int 成员赋值
     //count在静态成员空间，用来计数
     //可以看作所有pet对象共享的的量
     //在main函数之前count已经有值
+    //特殊情况如果是 const static int，并且是整型常量，你可以在类内初始化：static const int maxCount = 100;
 };
 
 class Dog : public Pet
@@ -72,21 +75,40 @@ Cat::Cat(std::string theName) : Pet(theName)
 
 int main()
 {
-    Dog dog("Tom"); //创建对象dog，自动传参，调用函数
-    Cat cat("Jerry");
+    Dog dog("Tom"); //创建对象dog，自动传参，调用函数  //计数器加一
+    Cat cat("Jerry");                            //计数器加一
     //Dog dog=cat;//可以这样赋值，将cat对象赋给dog对象
     //此时会调用复制构造函数，这个函数系统会自动生成
 
     std::cout << "\nappear" << Pet::getCount() << "animal!\n\n"; //第三步，打印两只anlmal//里面是一个解析器
     {
 
-        Dog dog_2("Tom_2");
+        Dog dog_2("Tom_2");     //调用父类的构造函数初始化
         Cat cat_2("Jerry_2");
 
         std::cout << "\nsecond appear" << Pet::getCount() << "animal!\n\n";
-    } //大括号之后执行析构器
-
+    } 
     std::cout << "\nthere have " << Pet::getCount() << " animal!\n\n"; //最后执行最后的喜析构器
 
     return 0;
 }
+/*
+执行结果  //大括号之后执行析构器 ， dog_2 和 cat_2 是在一个局部作用域内创建的对象。它们的作用域只在大括号 {} 内 ，C++执行析构 叫做 栈对象的后进先出
+name is Tom
+name is Jerry
+
+appear2animal!
+
+name is Tom_2
+name is Jerry_2
+
+second appear4animal!
+
+Jerry_2died
+Tom_2died
+
+there have 2 animal!
+
+Jerrydied
+Tomdied
+*/

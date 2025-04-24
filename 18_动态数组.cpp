@@ -17,3 +17,12 @@ int main()
     }
     return 0;
 }
+/*
+执行结果
+place input score5
+x[i]is0
+x[i]is1
+x[i]is2
+x[i]is3
+x[i]is4
+*/

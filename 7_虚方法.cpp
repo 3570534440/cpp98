@@ -89,7 +89,7 @@ int main()
 
 	cat->sleep();
 	cat->eat();
-	cat->play();
+	cat->play();   //子类可以再调用父类的play，然后再执行自己的
 
 	dog->sleep();
 	dog->eat();
@@ -100,3 +100,14 @@ int main()
 
 	return 0;
 }
+
+/*执行结果   
+jiafei  sleeping!
+jiafei  eatingg!
+jiafei  playing!
+jiafei  play playing!
+x.dfsd  sleeping!
+x.dfsd  eatingg!
+x.dfsd  playing!
+x.dfsd  cat!
+*/

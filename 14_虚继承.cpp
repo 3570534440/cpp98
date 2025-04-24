@@ -98,7 +98,7 @@ TeachingStudent::TeachingStudent(std::string theName1,
 
 void TeachingStudent::introduce()
 {
-    std::cout << "大家好，我是" << Student::name << "。我教" << Teacher::classes << ", ";
+    std::cout << "大家好，我是" << Student::name << "。我教" << Teacher::classes << ", "; //TeachingStudent类中调用时，时独有的名字
     std::cout << "同时我在" << Student::classes << "学习。\n\n";
 }
 
@@ -118,3 +118,21 @@ int main()
 
     return 0;
 }
+/*
+执行结果
+
+大家好，我是小甲鱼, 我教C++入门班。
+
+小甲鱼教C++入门班。
+
+大家好，我是迷途羔羊, 我在C++入门班学习。
+
+迷途羔羊加入C++入门班学习。
+
+大家好，我是丹丹。我教C++入门班, 同时我在C++进阶班学习。
+
+丁丁教C++入门班。
+
+丹丹加入C++进阶班学习。
+
+*/

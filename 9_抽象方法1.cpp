@@ -31,15 +31,25 @@ public:
     {
         std::cout << "Do something in class ClxDerived!\n";
     };
+    //如果不想执行，则要设置为虚函数
+    // virtual void doSomething()
+    // {
+    //     std::cout << "Do something in class ClxBase!\n";
+    // }
 };
 
 int main()
 {
     ClxBase *pTest = new ClxDerived;
 
-    pTest->doSomething();
+    pTest->doSomething(); //执行父类的doSomething
 
-    delete pTest;
+    delete pTest;         //执行子类的析构
 
     return 0;
 }
+
+/*执行结果 ，这里执行的是父类的doSomething,因为他不是虚函数，如果要执行子类的，则需要设置为
+Do something in class ClxBase!
+Output from the destructor of class ClxDerived!
+*/

@@ -119,7 +119,7 @@ std::ostream& operator<<(std::ostream& os, Rational f);
 //只要是属于rational就执行重载后的函数
 int main()
 {
-    Rational f1(2, 16);
+    Rational f1(2, 16);  //初始化 对分数进行简化操作包括：
     Rational f2(7, 8);
 
     // 测试有理数加法运算
@@ -137,7 +137,7 @@ int main()
     return 0;
 }
 
-std::ostream& operator<<(std::ostream& os, Rational f)
+std::ostream& operator<<(std::ostream& os, Rational f) // << (f1+f2)
 //第一个是流的对象，第二个是传入到流里面的数据
 //返回类型是ostream流的引用，在调用重载函数时operator<<()重载函数时传递给他时那个流
 //它返回的就是那个流的一个参数，也就是流的引用

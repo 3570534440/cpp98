@@ -91,3 +91,13 @@ int main()
     //最后执行三个构造器，基类的构造器在最后
     return 0;
 }
+/*
+执行结果
+I'm eatting!
+I'm eatting!
+i eating15lunch!
+
+i am beautiful gile
+
+i am a flish
+*/

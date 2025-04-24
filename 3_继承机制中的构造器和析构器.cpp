@@ -45,7 +45,7 @@ Subclass::~Subclass()
               << std::endl; //第五步
 }
 int main()
-{
+{ //执行顺序，父类的构造函数，子类的构造函数，子类的析构函数 ，父类的析构函数
     Subclass subclass;
     subclass.dosomething();
     std::cout << "ok" << std::endl; //第四步
