@@ -1,7 +1,7 @@
 #include <iostream>
 #include <climits>
 
-unsigned long returnFactorial(unsigned short num) throw (const char *);
+unsigned long returnFactorial(unsigned short num);
 
 int main()
 {
@@ -29,8 +29,7 @@ int main()
     return 0;
 }
 
-unsigned long returnFactorial(unsigned short num) throw (const char *)
-{
+unsigned long returnFactorial(unsigned short num) {
     unsigned long sum = 1;
     unsigned long max = ULONG_MAX;
 
@@ -49,3 +48,9 @@ unsigned long returnFactorial(unsigned short num) throw (const char *)
         return sum;
     }
 }
+
+/*
+执行结果：
+请输入一个整数: 15
+15的阶乘值是: 1307674368000
+*/

@@ -72,3 +72,10 @@ int main()
     obj2.print();
     return 0;
 }
+/*
+执行结果：
+1
+2
+2
+2
+*/

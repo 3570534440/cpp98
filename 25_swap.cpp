@@ -27,3 +27,10 @@ int main()
     std::cout << "a1 " << a1 << "a2 " << a2 << "\n";
     return 0;
 }
+/*
+执行结果：
+i1 100 j2200
+i1 200j2 100
+a1 asfedasa2 dfgcsx
+a1 asfedasa2 dfgcsx
+*/

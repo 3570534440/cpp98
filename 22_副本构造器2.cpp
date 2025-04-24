@@ -35,7 +35,7 @@ Myclass &Myclass::operator=(const Myclass &rhs)
 {
     std::cout << "go 4\n\n";
     if (this != &rhs)
-    {
+    { 
         delete ptr;
 
         ptr = new int;

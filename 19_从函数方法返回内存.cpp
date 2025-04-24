@@ -14,3 +14,8 @@ int *newint(int a)
     *b = a;
     return b;
 }
+/*
+执行结果：
+
+20
+*/
