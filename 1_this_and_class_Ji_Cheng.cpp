@@ -69,9 +69,6 @@ void Animal::eat()
 }
 
 void Animal::sleep()
-
-
-
 {
 	std::cout << "I'm sleeping!Don't disturb me!" << std::endl;
 }
@@ -95,7 +92,7 @@ int main()
 {
 	Pig pig;
 	Turtle turtle;
-
+	//子类可以调用父类的public方法
 	pig.eat();
 	turtle.eat();
 	pig.climb();
